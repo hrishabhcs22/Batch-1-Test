@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width:1500px;
+            height:150px;
+            margin:9px;
+            background-color: aquamarine;
+            cursor:pointer;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="box" onclick="bringtofront(this)"><b>hrishabh durwar</b></div>
+    <div class="box" onclick="bringtofront(this)"><b>jayant sharma</b></div>
+    <div class="box" onclick="bringtofront(this)"><b>monu sharma</b></div>
+    <script>
+        function bringtofront(box){
+            const parent=box.parentNode;
+            parent.insertBefore(box, parent.firstChild)
+        }
+    </script>
+    
+
+</body>
+</html>
